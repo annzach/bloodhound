@@ -1,19 +1,19 @@
 import React from 'react'
 
-const Sample = React.createClass({
+const Home = React.createClass({
   // componentDidMount : function(){
   //   console.log(this.props);
   // },
   render(){
-    console.log('in sample');
+    console.log('in home');
     return (
       <div>
         <button>
-         HELLO
+         from home
         </button>     
       </div>
     )
   }
 })
 
-export default Sample;
+export default Home;

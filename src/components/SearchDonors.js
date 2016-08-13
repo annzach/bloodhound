@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sample = React.createClass({
+const SearchDonors = React.createClass({
   // componentDidMount : function(){
   //   console.log(this.props);
   // },
@@ -9,11 +9,11 @@ const Sample = React.createClass({
     return (
       <div>
         <button>
-         HELLO
+         from search donors
         </button>     
       </div>
     )
   }
 })
 
-export default Sample;
+export default SearchDonors;
