@@ -36,11 +36,11 @@ exports.getAll = function() {
   });
 };
 
-exports.getOne = function(id) {
+exports.getOne = function(bloodtype) {
   return new Promise((resolve, reject) => {
     let sql = squel.select()
                    .from('bloodhounds')
-                   .where('id = ?', id)
+                   .where('bloodtype = ?', bloodtype)
                    .toString();
 
     connection.query(sql, (err, assignment) => {

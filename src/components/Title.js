@@ -7,9 +7,9 @@ const Title = React.createClass({
 render(){
     return (
       <div>
-        <h1>Bloodhound</h1>
+        <h1 id="bhTitle">Bloodhound</h1>
         <hr/>
-        <h4>live strong</h4>
+        <h4 id="slogan">live strong</h4>
         <button>
         <Link to = '/home'>Home</Link>
         </button>
@@ -26,7 +26,7 @@ render(){
         <br/>
 
         
-       
+        {this.props.children}
       </div>
     )
   }

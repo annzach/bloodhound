@@ -5,6 +5,7 @@ import Title from './components/Title'
 import Registration from './components/Registration'
 import Home from './components/Home'
 import SearchDonors from './components/SearchDonors'
+import './css/style.css'
 
 
 render(
