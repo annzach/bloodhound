@@ -5,12 +5,10 @@ const SearchDonors = React.createClass({
   //   console.log(this.props);
   // },
   render(){
-    console.log('in sample');
+    console.log('in donors page');
     return (
       <div>
-        <button>
-         from search donors
-        </button>     
+       <p>Donors Page</p>  
       </div>
     )
   }

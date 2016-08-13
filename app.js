@@ -10,7 +10,7 @@ const Assignment = require('./models/bloodhound');
 const app = express();
 
 
-  
+app.set('views','public')
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -21,7 +21,7 @@ app.use('/bloodhounds', require('./routes/bloodhounds'));
 
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '/public/index.html'));
 })
 
 

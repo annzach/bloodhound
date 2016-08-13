@@ -1,8 +1,10 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "main": "client.js",
+  "main": "app.js",
   "scripts": {
+    "start":"node app.js",
+    "watch":"webpack --inline --hot --watch",
     "dev": "webpack-dev-server --port 8080 --inline --hot --content-base public/ --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -38,7 +40,5 @@
     "uuid": "^2.0.2",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
