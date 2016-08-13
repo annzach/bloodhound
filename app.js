@@ -16,13 +16,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
-// GENERAL MIDDLEWARE
-/*
-/*app.get('/', (req, res) => {
-  res.render('index');
-})
-*/
+
 app.use('/bloodhounds', require('./routes/bloodhounds'));
+
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+})
+
 
 app.listen(PORT, err => {
   console.log(err || `Server listening on port ${PORT}`);

@@ -3,6 +3,10 @@ const router = express.Router();
 const Bloodhound = require('../models/bloodhound');
 
 
+router.get('/test', (req, res) => {
+res.send("hi");
+});
+
 router.get('/', (req, res) => {
   Bloodhound.getAll()
     .then(bloodhounds => {
