@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js",
+ 
     "watch":"webpack --inline --hot --watch",
     "dev": "webpack-dev-server --port 8080 --inline --hot --content-base public/ --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1"

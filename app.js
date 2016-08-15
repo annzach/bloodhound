@@ -5,7 +5,7 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const Assignment = require('./models/bloodhound');
+const Organizer = require('./models/productorganizer');
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
-app.use('/bloodhounds', require('./routes/bloodhounds'));
+app.use('/productorganizer', require('./routes/productorganizers'));
 
 
 app.get('*', (req, res) => {
